@@ -1,0 +1,50 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+Try it Yourself »
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 2px solid #555;
+    margin: 10 px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+label { 
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  text-align:  left;
+}
+
+button {
+  background-color: #e0e0f9;
+}
+
+.house_logo {
+  height: 50px;
+  width: 50px;
+}
+
+body {
+  background-image: link="http://wallpapersafari.com/w/UKvSsF/";
+
+}

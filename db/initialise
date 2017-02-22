@@ -1,0 +1,13 @@
+# source this file to setup database
+dropdb hogwarts
+createdb hogwarts
+psql -d hogwarts -f hogwarts.sql
+ruby seeds.rb
+
+psql -d hogwarts -f houses.sql
+
+ruby seed_houses.rb
+
+psql -d hogwarts -f alter_table.sql
+
+ruby ../controller.rb

@@ -1,5 +1,5 @@
 require_relative('../db/sql_runner.rb')
-
+require('pry')
 class House
 
   attr_reader :id, :name, :logo_url
@@ -18,5 +18,10 @@ class House
     @id = house['id'].to_i
   end
 
+  def self.all()
+    sql = "SELECT * FROM houses ; "
+    houses = SqlRunner.run(sql)
+    return houses.map{ |house| House.new(house) }
+  end
 
 end
